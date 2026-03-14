@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tecnologías Importantes</title>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#dbeafe,#f1f5f9,#e2e8f0);
+}
+
+/* MENU */
+
+header{
+background:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#2563eb;
+}
+
+nav a{
+margin:15px;
+text-decoration:none;
+color:#555;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+/* TITULO */
+
+.hero{
+text-align:center;
+padding:80px;
+}
+
+.hero h1{
+font-size:60px;
+color:#1e3a8a;
+}
+
+.hero p{
+font-size:18px;
+color:#555;
+}
+
+/* TARJETAS */
+
+.contenedor{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+padding:40px;
+}
+
+.card{
+background:white;
+width:300px;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+cursor:pointer;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h2{
+text-align:center;
+color:#2563eb;
+}
+
+/* INFORMACION */
+
+.info{
+display:none;
+padding:40px;
+margin:40px;
+background:white;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+animation:aparecer 0.7s;
+}
+
+.info img{
+width:300px;
+margin-top:20px;
+border-radius:10px;
+}
+
+@keyframes aparecer{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* REDES */
+
+.redes{
+text-align:center;
+padding:40px;
+}
+
+.redes a{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+background:white;
+border-radius:8px;
+text-decoration:none;
+color:#2563eb;
+font-weight:bold;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.redes a:hover{
+background:#2563eb;
+color:white;
+transform:scale(1.1);
+}
+
+/* PIE */
+
+footer{
+background:#1e293b;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">TECNOLOGÍA</div>
+
+<nav>
+
+<a onclick="mostrar('auto')">Automatización</a>
+<a onclick="mostrar('app')">App Inventor</a>
+<a onclick="mostrar('ia')">IA</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Tecnologías del Futuro</h1>
+
+<p>Explora tres tecnologías que están cambiando el mundo.</p>
+
+</section>
+
+<section class="contenedor">
+
+<div class="card" onclick="mostrar('auto')">
+
+<img src="1.jpg">
+
+<h2>Automatización</h2>
+
+</div>
+
+
+<div class="card" onclick="mostrar('app')">
+
+<img src="2.jpg">
+
+<h2>App Inventor</h2>
+
+</div>
+
+
+<div class="card" onclick="mostrar('ia')">
+
+<img src="3.jpg">
+
+<h2>Inteligencia Artificial</h2>
+
+</div>
+
+</section>
+
+
+<!-- AUTOMATIZACION -->
+
+<section id="auto" class="info">
+
+<h2>Automatización</h2>
+
+<p>
+La automatización utiliza tecnología para realizar tareas de forma automática,
+reduciendo errores humanos y mejorando la productividad.
+</p>
+
+<h3>Ejemplos</h3>
+
+<ul>
+
+<li>Robots en fábricas</li>
+<li>Sistemas automáticos en casas inteligentes</li>
+<li>Procesos industriales automáticos</li>
+
+</ul>
+
+<h3>¿Qué se puede hacer?</h3>
+
+<ul>
+
+<li>Controlar maquinaria</li>
+<li>Automatizar producción</li>
+<li>Programar robots</li>
+
+</ul>
+
+<img src="03.png">
+
+</section>
+
+
+<!-- APP INVENTOR -->
+
+<section id="app" class="info">
+
+<h2>App Inventor</h2>
+
+<p>
+App Inventor es una plataforma desarrollada por el MIT para crear aplicaciones
+móviles mediante bloques visuales de programación.
+</p>
+
+<h3>Ejemplos</h3>
+
+<ul>
+
+<li>Apps educativas</li>
+<li>Aplicaciones para negocios</li>
+<li>Juegos simples</li>
+
+</ul>
+
+<h3>¿Qué se puede hacer?</h3>
+
+<ul>
+
+<li>Crear apps Android</li>
+<li>Aprender programación</li>
+<li>Desarrollar proyectos tecnológicos</li>
+
+</ul>
+
+<img src="01.png">
+
+</section>
+
+
+<!-- IA -->
+
+<section id="ia" class="info">
+
+<h2>Inteligencia Artificial</h2>
+
+<p>
+La inteligencia artificial permite que las computadoras aprendan de los datos
+y tomen decisiones inteligentes.
+</p>
+
+<h3>Ejemplos</h3>
+
+<ul>
+
+<li>Asistentes virtuales</li>
+<li>Reconocimiento facial</li>
+<li>Sistemas de recomendación</li>
+
+</ul>
+
+<h3>¿Qué se puede hacer?</h3>
+
+<ul>
+
+<li>Crear chatbots</li>
+<li>Analizar datos</li>
+<li>Automatizar decisiones</li>
+
+</ul>
+
+<img src="02.png">
+
+</section>
+
+
+<section class="redes">
+
+<h2>Redes Sociales</h2>
+
+<a href="#">Facebook: @TecCodey Itzy</a>
+
+<a href="#">Instagram: @TecCodey_Itzy</a>
+
+<a href="#">Twitter: @TecCodey_Itzy</a>
+
+<a href="#">YouTube: TecCodey Itz</a>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Página de Tecnología |</p>
+
+</footer>
+
+
+<script>
+
+function mostrar(id){
+
+document.querySelectorAll(".info").forEach(seccion=>{
+seccion.style.display="none"
+})
+
+document.getElementById(id).style.display="block"
+
+window.scrollTo({
+top:document.getElementById(id).offsetTop-80,
+behavior:"smooth"
+})
+
+}
+
+</script>
+
+</body>
+
+</html>
